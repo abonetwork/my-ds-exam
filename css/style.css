@@ -550,15 +550,25 @@ footer .brand a {
 }
 
 .close {
-  color: #ccc;
+  font-size: 32px;
   float: right;
-  font-size: 30px;
   color: #fff;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: normal;
+  margin: -25px;
+  line-height: 1.4em;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  background-color: #ff6b6b;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
   text-decoration: none;
   cursor: pointer;
 }
