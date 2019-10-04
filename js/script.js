@@ -33,6 +33,16 @@ $(document).ready(function() {
     fade: true,
     fadeSpeed: 1000
   });
+
+  $("#btn-touch").on("click", () => {
+    //   console.log("click");
+    $("#my-modal").show();
+  });
+
+  $(".close").on("click", () => {
+    //   console.log("click");
+    $("#my-modal").hide();
+  });
 });
 
 // NAVIGATION SHOW/HIDE
