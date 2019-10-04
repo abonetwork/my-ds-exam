@@ -46,7 +46,7 @@ html {
   position: relative;
 }
 
-img {
+.brand img {
   max-width: 100%;
 }
 
@@ -223,6 +223,14 @@ nav {
     color: #fff !important;
     border: 1px solid buttonProps(border-color);
     margin: 45px 0px;
+  }
+  &.send-msg {
+    background-color: buttonProps(bg-color);
+    border-radius: 25px;
+    padding: 13px 50px;
+    color: #fff !important;
+    border: 1px solid buttonProps(border-color);
+    margin: 10px 0px;
   }
 
   &.get-in-touch {
@@ -421,8 +429,7 @@ nav {
 .slider .container,
 .why-us .container,
 .featured .container,
-.testimonial .container,
-.contact .container {
+.testimonial .container {
   padding: 5em 0;
 }
 
@@ -431,8 +438,7 @@ nav {
 .why-us,
 .featured,
 .our-partners,
-.testimonial,
-.contact {
+.testimonial {
   text-align: center;
 }
 
@@ -561,16 +567,15 @@ footer .brand {
   display: none;
   position: fixed;
   z-index: 1;
-  left: 0;
   top: 0;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
-  margin: 10% auto;
+  margin: 5% auto;
   width: 60%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
   animation-name: modalopen;
@@ -584,7 +589,7 @@ footer .brand {
 
 .modal-header {
   background: modalProps(modal-color);
-  padding: 30px 60px;
+  padding: 30px 32px;
   color: #fff;
 }
 
@@ -607,7 +612,94 @@ footer .brand {
   cursor: pointer;
 }
 
-.contact form {
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+.input-group-addon:first-child {
+  border-right: 0;
+}
+
+.input-group-addon {
+  padding: 16px 18px;
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 1;
+  color: #555555;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: 1px solid #ebebeb;
+}
+
+.input-group-addon,
+.input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.input-group-addon,
+.input-group-btn,
+.input-group .form-control {
+  display: table-cell;
+}
+
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+
+.input-group-addon,
+.input-group-btn,
+.input-group .form-control {
+  display: table-cell;
+}
+
+.input-group .form-control {
+  font-size: 20px;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.form-control {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  height: 62px;
+  padding: 6px 0px 6px 27px;
+  line-height: 1.428571429;
+  color: #838384;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #ebebeb;
+  outline: none;
+}
+
+textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  padding: 6px 0px 6px 27px;
+  color: #838384;
+  background-color: #ffffff;
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: none;
+  background-image: none;
+  border: 1px solid #ebebeb;
+  outline: none;
+}
+
+.input-group-addon img {
+  width: 23px;
 }
 
 // media queries
