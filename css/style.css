@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cf::before {
+  content: "";
+  display: table;
+}
+
+.cf::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  color: #444;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body ul,
+body ol,
+body p {
+  margin-top: 0;
+}
+
+body h1 {
+  font-weight: 900;
+}
+
+body h2 {
+  font-size: 2em;
+}
+
+body p {
+  line-height: 1.5;
+}
+
+body a {
+  color: #ff6b6b;
+  text-decoration: none;
+}
+
+body a:hover, body a:focus, body a:active, body a:visited {
+  color: #ff6b6b;
+}
+
+.container-fluid {
+  padding: 0 1em;
+}
+
+.container-fluid.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background: #212121;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1486px;
+}
+
+nav {
+  background-color: #fff;
+  position: relative;
+  top: 0;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 12px;
+}
+
+nav a:hover, nav a:focus, nav a:active, nav a:visited {
+  text-decoration: none;
+  margin: 12px;
+}
+
+nav .brand {
+  display: block;
+  float: left;
+  width: 225px;
+}
+
+nav .brand a {
+  color: #444;
+  display: block;
+}
+
+nav .nav-toggle {
+  color: #444;
+  cursor: pointer;
+  display: block;
+  float: right;
+  font-size: 1.25em;
+  padding: 1em 0;
+  z-index: 1000;
+}
+
+nav ul {
+  clear: both;
+  list-style: none;
+  margin: 0 -1em;
+  padding: 0;
+  z-index: 999;
+}
+
+nav ul li {
+  text-align: center;
+}
+
+nav ul li a {
+  color: #fff;
+  display: block;
+  padding: 0.75em;
+}
+
+nav ul li .sm-link {
+  font-size: 0.8em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 0px 25px;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+}
+
+.btn.book-now {
+  background-color: #ff6b6b;
+  border-radius: 25px;
+  padding: 10px 17px;
+  color: #fff !important;
+  border: 1px solid #fb5252;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  nav .nav-toggle {
+    display: none;
+  }
+  nav ul {
+    border: none;
+    clear: none;
+    display: block !important;
+    float: right;
+    margin: 0;
+    padding: 12px 0;
+  }
+  nav ul li {
+    border: none;
+    display: block;
+    float: left;
+    margin-right: 1.5em;
+  }
+  nav ul li:last-of-type {
+    margin-right: 0;
+  }
+  nav ul li a {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
