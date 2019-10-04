@@ -28,19 +28,20 @@ $(document).ready(function() {
     infinite: true,
     dots: true,
     arrows: false,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 3000,
     fade: true,
     fadeSpeed: 1000
   });
 
   $("#btn-touch").on("click", () => {
-    //   console.log("click");
+    $("#my-modal").show();
+  });
+  $("#btn-touch-client").on("click", () => {
     $("#my-modal").show();
   });
 
   $(".close").on("click", () => {
-    //   console.log("click");
     $("#my-modal").hide();
   });
 });

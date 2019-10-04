@@ -245,6 +245,15 @@ nav {
     background-color: buttonProps(bg-color);
     border: 3px solid #fff;
   }
+
+  &.get-in-touch-client {
+    background-color: buttonProps(bg-color);
+    border-radius: 25px;
+    padding: 13px 50px;
+    color: #fff !important;
+    border: 1px solid buttonProps(border-color);
+    margin: 0px 0px 40px 0px;
+  }
 }
 .btn:hover {
   background-color: darken(buttonProps(bg-color), 6%);
@@ -507,6 +516,23 @@ nav {
 .our-partners {
   background-color: #f5f5f5;
   color: #545454;
+}
+
+.testimonial img {
+  max-width: 500px;
+  padding-bottom: 30px;
+}
+.testimonial span {
+  color: #9b9b9b;
+  text-align: left;
+  float: left;
+  font-size: 0.75em;
+  font-weight: 600;
+}
+.testimonial p {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
 }
 
 // footer
